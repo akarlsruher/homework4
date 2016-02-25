@@ -1,0 +1,80 @@
+h1 { 
+
+	background-color: white;
+	width: 80%;
+	text-align: center;
+	font-size: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: auto;
+	margin-top: 20px;
+
+	font-family: 'Walter Turncoat', cursive;
+
+
+
+}
+p {
+
+	font-family: 'Walter Turncoat', cursive;
+	text-align: center;
+
+
+
+}
+
+#randomNum {
+
+
+}
+
+#match {
+
+	font-family: 'Walter Turncoat', cursive;
+
+	font-size: 35px;
+	width: 300px;
+	height: 40px;
+}
+
+#scoreboard {
+	
+	font-family: 'Walter Turncoat', cursive;
+
+	font-size: 35px;
+	height: 100px;
+	width: 300px;
+	text-align: left;
+	background-color: white;
+	
+}
+
+
+#yourScore {
+	
+	font-family: 'Walter Turncoat', cursive;
+
+	font-size: 35px;
+	display: block;
+	width: 300px;
+	
+}
+
+
+.crystal {
+	width: 100px;
+
+
+
+}
+
+#images {
+	margin-left: 280px;
+}
+
+
+#numberText {
+
+	margin: auto;
+    width: 30%;
+}

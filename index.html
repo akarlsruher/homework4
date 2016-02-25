@@ -2,120 +2,48 @@
 <html>
 <head>
 	<title>Crystal Collector</title>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+	
 </head>
 <body>
-	<h1>Crystal Collector!</h1>
+	<h1>CRYSTAL COLLECTOR</h1>
 
-	<p id="instructions">
-		You will be given a random number at the start of the game.<br><br>There are four crystals below.  By clicking on a crystal you will add a spcific amount of points to your total score. <br><br> You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.<br><br> The value of each crystal is hidden from you until you click on it.<br><br> Each time the game starts, the value of each crystal changes.
-	</p>
-
-	<div id="randomNum"></div>
-
-	<div id="scoreboard">
-		<div>Wins:<span id="wins"></span></div>
-		<div>Losses:<span id="losses"></span></div>
+	<div id="images">
+		<img src="assets/images/red.png" id="redcrystal" class="crystal">
+		<img src="assets/images/blue.png" id="bluecrystal" class="crystal">
+		<img src="assets/images/yellow.png" id="yellowcrystal" class="crystal">
+		<img src="assets/images/green.png" id="greencrystal" class="crystal">
 	</div>
 
-	<img src="assets/images/red.png" id="redcrystal" class="crystal" data-value="">
-	<img src="assets/images/blue.png" id="bluecrystal" class="crystal" data-value="">
-	<img src="assets/images/yellow.png" id="yellowcrystal" class="crystal" data-value="">
-	<img src="assets/images/green.png" id="greencrystal" class="crystal" data-value="">
 
-	<div>User Score:<span id="user_score"></span></div>
+	<div id="numberText">
+		<div id="match">Match This #:&nbsp<span id="randomNum"></span></div>
 
-	<script type="text/javascript">
+		<div id ="yourScore">
+			<div>Your Score:<span id="user_score"></span></div>
+		</div>
 
-		
-
-		$( document ).ready(function() {
-
-			var userScore = 0
-			var randomNum = 0
-			var wins = 0
-			var losses = 0 
-			var crystal1 = 0
-			var crystal2 = 0
-			var crystal3 = 0
-			var crystal4 = 0
+		<div id="scoreboard">
+			<div>Wins:<span id="wins"></span></div> <div>Losses:<span id="losses"></span></div>
 			
-			var roundStart = function(){
-
-				crystal1 = Math.floor((Math.random() * 12) + 1);
-				crystal2 = Math.floor((Math.random() * 12) + 1);
-				crystal3 = Math.floor((Math.random() * 12) + 1);
-				crystal4 = Math.floor((Math.random() * 12) + 1);
-
-				randomNum = Math.floor((Math.random() * 108) + 17);
-				$("#randomNum").text(randomNum);
-
-				userScore = 0
-				$("#user_score").text(" " + userScore);
+		</div>
+	</div>
 
 
 
-				console.log(crystal1);
-				console.log(crystal2);
-				console.log(crystal3);
-				console.log(crystal4);
-				console.log(randomNum);
-
-			};
+	<p id="instructions">
+		You will be given a random number at the start of the game.<br><br>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score. <br><br> You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.<br><br> The value of each crystal is hidden from you until you click on it.<br><br> Each time the game starts, the value of each crystal changes.
+	</p>
 
 
 
-			roundStart();
 
 
-
-			$("#redcrystal").click(function(){
-				userScore = userScore + crystal1;
-				$("#user_score").text(" " + userScore);
-				compare();
-			});
-
-			$("#bluecrystal").click(function(){
-				userScore = userScore + crystal2;
-				$("#user_score").text(" " + userScore);
-				compare();
-			});
-
-			$("#yellowcrystal").click(function(){
-				userScore = userScore + crystal3;
-				$("#user_score").text(" " + userScore);
-				compare();
-			});
-
-			$("#greencrystal").click(function(){
-				userScore = userScore + crystal4;
-				$("#user_score").text(" " + userScore);
-				compare();
-			});
-
-    		
-			var compare = function(){
-    			if(userScore > randomNum){
-    				alert("Sorry, you lost.");
-    				losses = losses + 1
-    				$("#losses").text(losses);
-    				roundStart();
-    				
-    			}
-    			if (userScore === randomNum){
-    				alert("WINNER!");
-    				wins = wins + 1
-    				$("#wins").text(wins);
-    				roundStart();
-    			}	
-    		};
-
-
-		});
-
-
-
-	</script>
-
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
