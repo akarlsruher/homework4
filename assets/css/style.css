@@ -69,12 +69,16 @@ p {
 }
 
 #images {
-	margin-left: 280px;
+	margin: auto;
+    width: 40%;
+    display: block;
+    margin-top: 20px;
 }
 
 
 #numberText {
 
 	margin: auto;
-    width: 30%;
+    width: 25%;
+    margin-top: 50px;
 }
