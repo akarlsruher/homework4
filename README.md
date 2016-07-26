@@ -1,9 +1,12 @@
 <snippet>
   <content>
 # Crystal Collector
-
 ## About
-Friend Finder is a match making application, much like a dating app, that will take in results from users' surveys then compare their results against all other users who have completed it. The application will then display the name and picture of the user with the best match overall.
+You will be given a random number at the start of the game.
+There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. 
+You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.
+The value of each crystal is hidden from you until you click on it.
+Each time the game starts, the value of each crystal changes.
 ## Deployed
 https://crystal-collector-game.herokuapp.com/
 ## Technologies Used
