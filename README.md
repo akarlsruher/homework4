@@ -12,8 +12,7 @@ https://crystal-collector-game.herokuapp.com/
 ## Technologies Used
 HTML, CSS, Javascript, & JQuery
 ## Screen Shots
-![Screen1](https://s32.postimg.org/4gs6d5y45/Screen_Shot_2016_07_05_at_1_09_11_PM.png "Survey")
-![Screen2](https://s31.postimg.org/enavqg80r/Screen_Shot_2016_07_05_at_1_09_34_PM.png "Matched!")
+![Screen1](https://s32.postimg.org/gf0qtifp1/Screen_Shot_2016_07_26_at_1_04_30_PM.png "Crystal Collector")
 
 ## License
 © Copyright Aaron Karlsruher 2016
